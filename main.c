@@ -4,16 +4,25 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-   int a,i;
-   int b=0;
-   
-   printf("input a numbder :");
-   scanf("%d", &a);
-   
-   for(i=0;i<=a;i++)
-    b=b+i;
-    
-   printf("The result is %d", b);
+	int a,b;
+	char c;
+	
+	printf("enter the calculation : ");
+	scanf("%d%c%d", &a,&c,&b);
+	
+	
+	
+	if(c==43)
+	 printf("=%d", a+b);
+	 
+	else if(c==45)
+	 printf("=%d", a-b);
+	 
+	else if(c==42)
+	 printf("=%d", a*b);
+	 
+	else if(c==47)
+	 printf("=%d", a/b);
    
    return 0;
 }
