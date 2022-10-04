@@ -4,16 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-   int num;
-   char c;
+   int a,i;
+   int b=0;
    
-   printf("input a string:");
-   while((c=getchar())!='\n')
-    {
-       if(c>47&&c<58)
-       num++;
-    }
+   printf("input a numbder :");
+   scanf("%d", &a);
    
-   printf("the number of digits is %d", num);
+   for(i=0;i<=a;i++)
+    b=b+i;
+    
+   printf("The result is %d", b);
+   
    return 0;
 }
